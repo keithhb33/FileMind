@@ -1,0 +1,21 @@
+{
+  "name": "filemind-cloud-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloud upload version of FileMind that organizes uploaded folders and returns a replacement ZIP.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "replit": "bash scripts/start-replit.sh",
+    "check": "node --check src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jszip": "^3.10.1",
+    "multer": "^2.1.1"
+  }
+}

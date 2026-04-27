@@ -1,0 +1,12 @@
+entrypoint = "src/server.js"
+modules = ["nodejs-20"]
+run = "npm run replit"
+
+[deployment]
+run = "npm run replit"
+build = "npm install"
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 3000
+externalPort = 80

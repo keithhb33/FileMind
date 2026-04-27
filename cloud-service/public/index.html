@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FileMind Cloud</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace">
+        <header class="topbar">
+          <div class="brand-mark">FM</div>
+          <div>
+            <h1>FileMind Cloud</h1>
+            <p>AI-inspired folder cleanup with a visual upload, review, and ZIP download flow.</p>
+          </div>
+        </header>
+
+        <form id="upload-form" class="upload-panel">
+          <div class="upload-copy">
+            <h2>Upload a folder</h2>
+            <p>Select a local folder, review the proposed organization, then download a replacement ZIP.</p>
+          </div>
+
+          <label class="drop-zone" for="folder-input">
+            <span class="drop-title">Choose folder</span>
+            <span id="selected-summary" class="drop-detail">No files selected</span>
+          </label>
+          <input id="folder-input" class="sr-only" type="file" webkitdirectory directory multiple>
+
+          <div class="actions">
+            <label class="model-picker">
+              <span>Model</span>
+              <select id="model-select"></select>
+            </label>
+            <button id="organize-button" type="submit" disabled>Organize</button>
+            <span id="limits" class="limits">Loading limits...</span>
+          </div>
+        </form>
+
+        <section id="status" class="status" aria-live="polite"></section>
+
+        <section id="result" class="result hidden">
+          <div class="result-head">
+            <div>
+              <p class="eyebrow">Replacement folder</p>
+              <h2 id="replacement-name"></h2>
+              <p id="analysis-mode" class="analysis-mode"></p>
+              <p id="summary"></p>
+            </div>
+            <a id="download-link" class="download-button" href="#">Download ZIP</a>
+          </div>
+
+          <div id="groups" class="group-grid"></div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Original</th>
+                  <th>New location</th>
+                  <th>Why</th>
+                </tr>
+              </thead>
+              <tbody id="file-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
