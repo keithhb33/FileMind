@@ -100,3 +100,10 @@ http://localhost:11434
 ```
 
 Then reopen FileMind. Once Ollama is reachable, FileMind will install the missing local models automatically.
+
+
+## Website
+
+Visit the live, feature-reduced web-app here:
+
+[FileMind Cloud](https://filemind.replit.app)
