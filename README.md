@@ -8,7 +8,6 @@ Ollama runs locally in the background. FileMind does not use hosted AI models.
 
 ![FileMind source selection](./screenshots/Screenshot1.png)
 ![FileMind directory scan](./screenshots/Screenshot2.png)
-![FileMind organization review](./screenshots/Screenshot3.png)
 ![FileMind completion screen](./screenshots/Screenshot4.png)
 
 ## What You Need
