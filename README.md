@@ -1,14 +1,20 @@
 # FileMind
 
-FileMind is a desktop AI file manager for safely reorganizing local folders. It opens as an Electron app, walks you through a V2 organization wizard, scans one or more source directories, asks a local Ollama model for a plan, previews the before/after layout, lets you revise or manually adjust the proposal, and only moves files after you confirm.
-
-Ollama runs locally in the background. FileMind does not use hosted AI models.
+FileMind is a privacy-friendly desktop AI file manager that turns messy local folders into organized, reviewable plans. It opens as an Electron app, guides you through an organization wizard, scans one or more source directories, proposes a smarter folder structure, lets you request revisions or manually make modifications, and only touches your files after you confirm.
 
 ## Screenshots
 
 ![FileMind source selection](./screenshots/Screenshot1.png)
+
+The source selection screen is where you begin a new organization run by choosing the folder or folders FileMind should scan.
+
 ![FileMind directory scan](./screenshots/Screenshot2.png)
+
+The review screen compares the current folder tree with FileMind's proposed organization, including move counts, reasoning, blocked items, and controls for requesting changes or approving the plan.
+
 ![FileMind completion screen](./screenshots/Screenshot4.png)
+
+The completion screen confirms that the approved moves were applied and offers an undo option or a quick way to start another scan.
 
 ## What You Need
 
