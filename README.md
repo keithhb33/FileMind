@@ -72,23 +72,6 @@ This launches the FileMind desktop window. During development, Electron also sta
 
 After applying moves, FileMind writes an undo manifest so the last applied plan can be undone from the app.
 
-## Current Features
-
-- Local-only Ollama planning with High Effort and Low Effort model choices.
-- Automatic first-run model installation for supported local models.
-- Recursive directory scanning with counts for files, folders, bytes, and skipped items.
-- Optional text snippets from common text/code formats for better organization context.
-- Retrieval-style local indexing that prioritizes projects, assignments, clients, and semantic groups before simple file-type buckets.
-- Deterministic fallback planning when an AI response is unusable.
-- Plan validation that blocks unsafe moves outside selected roots, duplicate destinations, invalid path segments, root-folder moves, and existing destinations.
-- Animated map and tree visualizations for current and proposed layouts.
-- Resizable before/after comparison view with zoom controls.
-- Image preview support for common image formats up to 25 MB.
-- Confirm-before-open flow for opening files in the system file manager.
-- Request-changes flow for AI revisions.
-- Manual drag editing in the proposed after tree.
-- Apply confirmation, partial failure reporting, and undo support through move manifests.
-
 ## Developer Commands
 
 ```bash
@@ -101,15 +84,6 @@ npm run check
 - `npm run build` type-checks and builds the Electron app files.
 - `npm run check` runs tests and verifies the local build.
 
-## Privacy
-
-FileMind is designed for local use:
-
-- Directory scanning happens on your machine.
-- Ollama runs on your machine.
-- FileMind does not include hosted AI models.
-- FileMind does not send scan metadata or text previews to any hosted model service.
-- Text previews are read locally by default for supported text files so FileMind can understand more than filenames. You can turn this off before scanning.
 
 ## If Ollama Is Not Detected
 
